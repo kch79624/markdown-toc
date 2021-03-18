@@ -67,7 +67,7 @@ async function extractHeading(filename, idx)
 
 	markdowns_parsed.sort((a, b) => (a.filename > b.filename ? 1 : -1))
 
-	const markdowns_formatted = markdowns_parsed.forEach(md =>
+	markdowns_parsed.forEach(md =>
 	{
 		console.log(chalk.cyan(md.date))
 		console.log('\n')
